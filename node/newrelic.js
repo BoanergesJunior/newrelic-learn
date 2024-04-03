@@ -2,7 +2,7 @@
 
 exports.config = {
   app_name: ['Node Test'],
-  license_key: '0c29eda982185a884258bd85c9b4c78eFFFFNRAL',
+  license_key: process.env.NEWRELIC_LICENSE_KEY,
   logging: {
     level: 'info',
   },
