@@ -1,9 +1,10 @@
 {
   "dependencies": {
-    "newrelic": "^11.14.0"
+    "newrelic": "^11.14.0",
+    "winston": "^3.13.0"
   },
   "scripts": {
-    "start": "node --env-file=.env main.js"
+    "start": "node --watch --env-file=.env main.js"
   },
   "engines": {
     "node": ">= 20.6.0"

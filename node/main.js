@@ -1,5 +1,6 @@
 require('newrelic');
 const http = require('http');
+const logger = require('./logger');
 
 const server = http.createServer((req, res) => {
   res.setHeader('Content-Type', 'text/plain');
@@ -10,4 +11,5 @@ const server = http.createServer((req, res) => {
 const port = 3000;
 server.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}/`);
+  logger.info('Tudo funcionando!');
 });
